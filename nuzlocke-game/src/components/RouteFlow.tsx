@@ -7,7 +7,7 @@ export function RouteFlow({ onNext }: { onNext: () => void }) {
     if (stage === "preview") setStage("encounter");
     else if (stage === "encounter") setStage("trainers");
     else if (stage === "trainers") setStage("town");
-    else onNext(); // move to TeamManager
+    else onNext();
   };
 
   return (
